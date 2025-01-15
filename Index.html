@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daugavpils, Latvia - Official City Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .section-header {
+            background-color: rgba(43, 159, 78, 0.9);
+            color: rgb(249, 249, 249);
+            padding: 12px;
+            display: inline-block;
+        }
+        .event-card {
+            border-bottom: 1px solid #e3741f;
+            padding: 12px 0;
+        }
+        
+    </style>
+</head>
+<body class="bg-green-100">
+    <!-- Header -->
+    <header class="bg-green-800 text-black p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="DVGP logo.jpg" alt="Daugavpils City Logo" class="mr-4">
+                <h1 class="text-2xl font-bold">Daugavpils, Latvia</h1>
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="About Daugavpils" class="hover:text-orange-200">Home</a></li>
+                    <li><a href="About Daugavpils" class="hover:text-orange-200">About</a></li>
+                    <li><a href="Tourist Routes" class="hover:text-orange-200">Tourism</a></li>
+                    <li><a href="Contacts" class="hover:text-orange-200">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto mt-8 grid md:grid-cols-3 gap-6">
+        <!-- Left Column: City Information -->
+        <div class="md:col-span-2">
+            <!-- City Overview -->
+            <section id="about" class="bg-green-100 p-2 rounded-lg shadow-md mb-6">
+                <h2 class="text-2xl font-bold mb-4 section-header">About Daugavpils</h2>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="font-bold">City Facts</h3>
+                        <ul>
+                            <li><strong>Population:</strong> Approximately 78,850</li>
+                            <li><strong>Region:</strong> Latgale Region</li>
+                            <li><strong>Founded:</strong> 1275</li>
+                            <li><strong>Geographic Location:</strong> Eastern Latvia, near the Daugava River</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Historical Highlights</h3>
+                        <p>Daugavpils is the second-largest city in Latvia, known for its historical fortresses and vibrant cultural scene. It plays a significant role in the country's history and development.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Photo Gallery -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md mb-6">
+                <h2 class="text-2xl font-bold mb-4 section-header">Gallery</h2>
+                <div class="grid grid-cols-3 gap-4">
+                    <img src="gal1.jpg" alt="New Year's Eve in Daugavpils 2024/2025" class="rounded-lg">
+                    <img src="gal2.jpg" alt="Christmas and New Year in Daugavpils 2024" class="rounded-lg">
+                    <img src="gal3.jpg" alt="'Daugavpils Sports School Laureate 2024'" class="rounded-lg">
+                </div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md mb-6">
+                <h2 class="text-2xl font-bold mb-4 section-header">City Tour Video</h2>
+                <div class="aspect-w-16 aspect-h-9">
+                    <iframe 
+                        width="560" 
+                        height="315" 
+                        src="https://youtu.be/MtF9D46Kujs" 
+                        title="Daugavpils City Tour" 
+                        frameborder="0"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Column: Interactive Sections -->
+        <div>
+
+            <!-- Weather Widget -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md mb-6">
+                            <h2 class="text-2xl font-bold mb-4 section-header">Current Weather</h2>
+                            <div id="weather-widget">
+                                <p><strong>Temperature:</strong> 1°C</p>
+                                <p><strong>Conditions:</strong> Cloudy</p>
+                                <p><strong>Humidity:</strong> 65%</p>
+                                <p><strong>Wind:</strong> 10 km/h NW</p>
+                            </div>
+            </section>
+            
+
+            <!-- Upcoming Events -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-header">Upcoming Events</h2>
+                <div>
+                    <div class="event-card">
+                        <h3 class="font-bold">Children's creative lesson "How are islands formed?"</h3>
+                        <p>Date: January 15, 2025</p>
+                        <p>Time:16:00</p>
+                    </div>
+                    <div class="event-card">
+                        <h3 class="font-bold">Baltic Basketball League | Daugavpils University vs. TTT Riga Juniors</h3>
+                        <p>Date: January 15, 2025</p>
+                        <p>Time:18:30</p>
+                    </div>
+                    <div class="event-card">
+                        <h3 class="font-bold">Concert "Winter Fun" (Sviatočnije poteški)</h3>
+                        <p>Date: January 16, 2025</p>
+                        <p>Time:18:00</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Full Width Sections -->
+        <div class="md:col-span-3 grid md:grid-cols-3 gap-6">
+            <!-- Public Transport -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-header">Public Transport</h2>
+                <ul>
+                    <li>Bus Routes: Numerous routes throughout the city</li>
+                    <li>Nearest Train Station: Daugavpils Railway Station</li>
+                    <li>Intercity Connections: Regular buses and trains to major cities</li>
+                </ul>
+            </section>
+
+            <!-- Tourist Routes -->
+            <section class="bg-green-100 p-2 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-header">Tourist Routes</h2>
+                <ul>
+                    <li>Sculpture Garden</li>
+                    <img src="gard.jpg" alt="Sculpture Garden" class="rounded-lg">
+                    <li>Daugavpils Fortress</li>
+                    <img src="fort.jpg" alt="Daugavpils Fortress" class="rounded-lg">
+                    <li>Latgale Zoo</li>
+                    <img src="zoo.jpg" alt="Latgale Zoo" class="rounded-lg">
+                </ul>
+            </section>
+
+            <!-- Things to Do -->
+            <section class="bg-green-100 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-4 section-header">What to Do and See</h2>
+                <ul>
+                    <li>Daugavpils Fortress</li>
+                    <li>Rothko Museum</li>
+                    <li>Latgale Zoo</li>
+                    <li>Latgale Culinary Heritage Center “Šmakovka”</li>
+                    <li>Daugavpils Clay Art Center</li>
+                </ul>
+            </section>
+        </div>
+
+            <!-- Contacts -->
+                <div class="md:col-span-3 bg-white p-6 rounded-lg shadow-md">
+                    <h2 class="text-2xl font-bold mb-4 section-header">Contacts</h2>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div>
+                            <h3 class="font-bold">City Municipality</h3>
+                            <p>Address: Krišjāņa Valdemāra Street 1, Daugavpils, LV-5401</p>
+                            <p>Phone: +371 65404344</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Police Station</h3>
+                            <p>Address: Muzeja iela 6, Daugavpils, LV-5401</p>
+                            <p>Phone: +371 65 421 500</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">LEGAL DEPARTMENT</h3>
+                            <p>Address: Krišjāņa Valdemāra Street 1</p>
+                            <p>Phone: +371 65404366</p>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        
+            <!-- Footer -->
+            <footer class="bg-green-500 text-black p-6 mt-8">
+                <div class="container mx-auto text-center">
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div>
+                            <h4 class="font-bold">Useful Links</h4>
+                            <ul>
+                                <li><a href="https://www.visitdaugavpils.lv/turisma-objekta-tips/viesnicas/" class="hover:text-orange-200">Book Hotels</a></li>
+                                <li><a href="https://www.daugavpils.lv/pasvaldiba/pakalpojumi/publiskie-pakalpojumi" class="hover:text-orange-200">Local Services</a></li>
+                                <li><a href="https://www.daugavpils.lv/kontakti" class="hover:text-orange-200">Emergency Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Contact Information</h4>
+                            <p>Email: info@daugavpils.lv</p>
+                            <p>Phone: +371 xxxxxxxx</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Social Media</h4>
+                            <div class="flex justify-center space-x-4">
+                                <a href="https://www.facebook.com/daugavpilsdome" class="hover:text-orange-200">Facebook</a>
+                                <a href="https://www.youtube.com/channel/UCDAXMc7loOMmMSabs_OtSxQ" class="hover:text-orange-200">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4">&copy; 2025 Daugavpils City Official Website. All rights reserved.</p>
+                </div>
+            </footer>
+        </body>
+        </html>
